@@ -9,7 +9,6 @@ metadata:
     release: "{{ .Release.Name }}"
     heritage: "{{ .Release.Service }}"
 spec:
-  clusterIP: None
   type: NodePort
   ports:
     - name: https
