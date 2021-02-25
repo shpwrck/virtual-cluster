@@ -9,11 +9,11 @@ metadata:
     release: "{{ .Release.Name }}"
     heritage: "{{ .Release.Service }}"
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
     - name: https
       port: 443
-      targetPort: 6443
+      targetPort: 8443
       protocol: TCP
   selector:
     app: virtualcluster
