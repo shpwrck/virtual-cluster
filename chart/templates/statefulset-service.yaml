@@ -14,6 +14,7 @@ spec:
       port: 443
       targetPort: 6443
       protocol: TCP
+  clusterIP: None
   selector:
     app: virtualcluster
     release: "{{ .Release.Name }}"
